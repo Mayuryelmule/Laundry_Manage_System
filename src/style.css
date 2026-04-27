@@ -1,0 +1,61 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #eef2f3, #dfe9f3);
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: blue;
+  color: white;
+  border: none;
+}
+
+.status {
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.RECEIVED { background: gray; }
+.PROCESSING { background: orange; }
+.READY { background: green; }
+.DELIVERED { background: purple; }
+
+.dashboard {
+  display: flex;
+  gap: 10px;
+}
+
+.stat {
+  flex: 1;
+  background: blue;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
