@@ -2,60 +2,88 @@ body {
   font-family: "Segoe UI", sans-serif;
   background: linear-gradient(to right, #eef2f3, #dfe9f3);
   margin: 0;
+  padding: 0;
 }
 
+/* CENTER EVERYTHING */
 .container {
-  max-width: 900px;
-  margin: auto;
+  max-width: 800px;
+  margin: 50px auto;   /* 🔥 centers horizontally */
   padding: 20px;
 }
 
+/* TITLE */
 h1 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
+/* CARD */
 .card {
   background: white;
   padding: 20px;
-  margin: 15px 0;
+  margin-bottom: 20px;
   border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* INPUTS */
 input, select {
   width: 100%;
   padding: 10px;
-  margin: 8px 0;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
+/* BUTTON */
 button {
   width: 100%;
-  padding: 10px;
-  background: blue;
+  padding: 12px;
+  margin-top: 15px;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
   color: white;
   border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
+/* DASHBOARD */
+.dashboard {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* ORDER CARD */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-info {
+  margin-top: 10px;
+}
+
+/* STATUS */
 .status {
   padding: 5px 10px;
-  color: white;
   border-radius: 5px;
+  color: white;
 }
 
 .RECEIVED { background: gray; }
 .PROCESSING { background: orange; }
 .READY { background: green; }
 .DELIVERED { background: purple; }
-
-.dashboard {
-  display: flex;
-  gap: 10px;
-}
-
-.stat {
-  flex: 1;
-  background: blue;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  border-radius: 10px;
-}
